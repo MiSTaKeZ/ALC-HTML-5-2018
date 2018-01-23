@@ -12,7 +12,7 @@
             
             confirm("Unknown 'You are stuck in space alone...'");
             
-            alert("Player 'Who are you??'");
+            alert("Player 'Wh-Who are you??'");
             
             alert("I'm Clarisse you personal Robo Helper!");
             
@@ -20,36 +20,58 @@
             
             var askOne = prompt("What do you want to do now?").toLowerCase();
             
-            if(askOne == "go home"){
-                alert("Clarisse 'Well suck it up because where stuck!' ");
-                alert("GAME OVER!");
-            }
-            
-            /*var favColor = prompt("What is your favorite color?").toLowerCase();
-            
-            if(favColor == "pink"){
-                alert("Mine too!")
-                prompt("You are lost!");
-            }
-            else if(favColor == "red"){
-                alert ("Red sucks!")
-            }
-            else if(favColor == "blue"){
-                alert ("Is the sky!")
-            }
-             else if(favColor == "yellow"){
-                alert ("Thats a ok color!")
-            }
-             else if(favColor == "puple"){
-                alert ("Purple is my second favorite color!")
-            }
-            else{
-                alert("Error no in my program!")
-            }
-
+            switch(askOne){
+                case "go home":
+                    alert("Clarisse 'Sorry but your stranded in space'");
+                break;
+                
+                case "swim":
+                    alert("Clarisse 'Sorry but your stranded in space how in space do you think that is going to work? HA did you see what I did? No? Ok ill go away...'");
+                    alert("GAME OVER");
+                break;
+                    
+                case "suicide":
+                     alert("Clarisse 'Ok ill eject you from your helment!'");
+                     alert("GAME OVER");
+                break;
+                
+                case "kill myself":
+                    alert("Clarisse 'Ok ill eject you from your helment!'");
+                    alert("GAME OVER");
+                break;
+                
+                case "die":
+                    alert("Clarisse 'Ok ill eject you from your helment!'");
+                    alert("GAME OVER");
+                break;
+                
+                case "suicide":
+                    alert("Clarisse 'Ok is my voice that bad you always said you didn't like it!");
+                    alert("GAME OVER");
+                break;
+                
+                default:
+                    alert(" Clarisse 'I have a idea why don't we try to call someone!'");
+                    break;
+                    
+                    var callPeople = comfirm("Do you want to call someone? If Yes Click Ok, If No then click Cancel");
+                    
+                    if(callPeople){
+                        alert("Clarisse 'Good because im kinda tired of being stuck out here its cold!'");
+                        alert("'Im Calling them right now!");
+                    }
+                    
+                    else{
+                        alert("Clarisse 'Ok fine be that way! You'll proably be raped by space men or something like that!GOOD BYE!'");
+                        alert("GAME OVER!");
+                    }
+                    
+                } 
+                
 
             
         </script>
+        
     </body> 
         
 </html>
