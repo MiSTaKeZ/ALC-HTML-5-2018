@@ -10,13 +10,13 @@
             
             alert("Player 'What Happened?' ");
             
-            confirm("Unknown 'You are stuck in space alone...'");
+            alert("Unknown 'You'r stuck in space alone...'");
             
             alert("Player 'Wh-Who are you??'");
             
-            alert("I'm Clarisse you personal Robo Helper!");
+            alert("I'm Clarisse you personal Robo Helper! You programmed me into your helmet");
             
-            alert("Clarisse 'Do you not remember me? You are the one who created me.' ");
+            alert("Clarisse 'Do you not remember me? You were the one who created me.' ");
             
             var askOne = prompt("What do you want to do now?").toLowerCase();
             
@@ -53,22 +53,43 @@
                 default:
                     alert(" Clarisse 'I have a idea why don't we try to call someone!'");
                     break;
+                
+                         }
                     
-                    var callPeople = comfirm("Do you want to call someone? If Yes Click Ok, If No then click Cancel");
+                var callPeople = confirm("Do you want to call someone?' If Yes Click Ok, If No then click Cancel");
                     
                     if(callPeople){
-                        alert("Clarisse 'Good because im kinda tired of being stuck out here its cold!'");
-                        alert("'Im Calling them right now!");
+                        Stuck();
                     }
                     
                     else{
-                        alert("Clarisse 'Ok fine be that way! You'll proably be raped by space men or something like that!GOOD BYE!'");
+                        alert("Clarisse 'Ok fine be that way! You'll proably be killed by space men or something like bad like that! Lucky for me i'm not a human! GOOD BYE!'");
                         alert("GAME OVER!");
-                    }
-                    
-                } 
+                        }
+                     
+            
+            function Stuck(){
                 
-
+                var Stuck = alert("Clarrisse 'Good because im kinda tired of being stuck out here its cold!'");
+                
+                 var playerName = prompt("'But first whats your name? Because remember i'm an AI, and you always have differnt ways to say your name.';").toLocaleLowerCase();
+                    
+                    alert("Haha Just kidding I always knew what your name was " + playerName);
+            }
+            
+               var theCall = prompt(" Who do you want to contact??").toLowerCase();
+                
+                switch(theCall){
+                    
+                    case "nasa":
+                    alert("Здравствуйте кто это?");
+                    alert("Clarrisse 'They seem to be speaking Russin'");
+                    alert(playerName + "'Why on mother natures earth that there speaking Russin'"); 
+                    alert("Clarrisse 'You proably won remember but the Russins took over Nasa about 5 years ago'");
+                    break;
+                    
+                }
+          
             
         </script>
         
