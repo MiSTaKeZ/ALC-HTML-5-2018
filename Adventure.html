@@ -9,8 +9,11 @@
         <script>
             
             var playerName = prompt("Hi What is your name??");
-                alert("Hi " + playerName + " WELCOME to COLD SPACE!!!!!");
             
+                    alert("Hi " + playerName + " WELCOME to COLD SPACE!!!!!");
+            
+            alert("*THE GAME WILL START NOW*");
+                            
             alert(playerName + " 'What Happened?' ");
             
             alert("Unknown 'You'r stuck in space alone...'");
@@ -157,8 +160,9 @@
                                     alert("...");
                                     alert(playerName + " 'Fantasic i'm alone!'");
                                     break;
-                               
-                 var theShip = promt("What do you want to do now?");
+                                            }
+                              }
+                 var theShip = promt("What do you want to do now?").ToLowerCase;
                      switch(theShip){
                          case "die":
                              alert("Creator 'Omg do you hate my game that much! Well guess what you can't die but I can just end the game!");
@@ -167,6 +171,8 @@
                          default:
                              alert("*You take a deep breath in as you stand up*");
                              alert("*You look around the room and see a key*");
+                             }
+            
                            var grabKey = promt("What Do you want to do?").toLowerCase;
                              switch(grabKey){
                                  case "key":
@@ -178,15 +184,21 @@
                                         alert(playerName + " 'Oh my gosh do they speak russin too!!!'");
                                         alert("*The gaurd walks away because it doesn't speak english*");
                                         alert("*You grab take the key and unlock the door*");
-                                        alert("*You see that there is a long hall way going from left to right*")
+                                        alert("*You see that there is a long hall way going from left to right*");
+                                     break;
+                                           }
                             var hallWay = promt("What why do you want to go?").toLowerCase;
+                             switch(grabKey){
                                  case "left":
                                      alert("You walk down the hallway and find your self in a room with a sword");
                                      break;
                                      
                                  case "right":
-                                     alert("You walk down the hallway and find your self in a room with a red button");
+                                    alert("You walk down the hallway and find your self in a room with a red button");
                                      break;
+                                           }
+            
+                                         
                                      
                                      
                                            
