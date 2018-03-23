@@ -173,9 +173,9 @@
                              alert("*You look around the room and see a key*");
                              }
             
-                           var grabKey = promt("What Do you want to do?").toLowerCase;
+                           var grabKey = prompt("What Do you want to do? hint: key").toLowerCase;
                              switch(grabKey){
-                                 case "key":
+                                 case "grab key":
                                         alert("*You have grabed a key*");
                                         alert("*You walk over to the join gate*");
                                         alert("*You see a gaurd walk passed you");
@@ -185,9 +185,20 @@
                                         alert("*The gaurd walks away because it doesn't speak english*");
                                         alert("*You grab take the key and unlock the door*");
                                         alert("*You see that there is a long hall way going from left to right*");
-                                     break;
-                                           }
-                            var hallWay = promt("What why do you want to go?").toLowerCase;
+                                          break;
+                                 default:
+                                        alert("Ok ill just make you grab the key");
+                                     alert("*You have grabed a key*");
+                                        alert("*You walk over to the join gate*");
+                                        alert("*You see a gaurd walk passed you");
+                                        alert(playerName + " 'Hey you!!! Do you speak English??'");
+                                        alert("Alien 'Привет, привет' ");
+                                        alert(playerName + " 'Oh my gosh do they speak russin too!!!'");
+                                        alert("*The gaurd walks away because it doesn't speak english*");
+                                        alert("*You grab take the key and unlock the door*");
+                                        alert("*You see that there is a long hall way going from left to right*");
+                                     
+                                     var hallWay = prompt("What way do you want to go?").toLowerCase;
                              switch(grabKey){
                                  case "left":
                                      alert("You walk down the hallway and find your self in a room with a sword");
@@ -195,9 +206,14 @@
                                      
                                  case "right":
                                     alert("You walk down the hallway and find your self in a room with a red button");
+                                    alert("Because of who you are you love pressing buttons so you desided to press it! Setting of every bomb in that ship blowing it up and everyone dies in it including you!");
+                                    alert("GAME OVER!");
                                      break;
                                            }
         
+                                     
+                                           }
+                          
                               }
             
                  
