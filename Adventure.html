@@ -33,7 +33,6 @@
                 
                 case "swim":
                     alert("Clarisse 'Sorry but your stranded in space how in space do you think that is going to work? HA did you see what I did? No? Ok ill go away...'");
-                    alert("GAME OVER");
                 break;
                  case "Swim":
                     alert("Oh nice That will do the trick lets just swim in space to get out of here you're really smart! I'm so glad you were the one who created me!");
@@ -41,22 +40,22 @@
                     
                 case "suicide":
                      alert("Clarisse 'Wow ok I see how you are you're a wimp! Ill eject you from your helment!'");
-                     alert("GAME OVER");
+                     alert("*You're helment is now off but somehow your still standing!*");
                 break;
                 
                 case "kill myself":
                     alert("Clarisse 'Wow your going to a new low aren't you! Ok ill eject you from your helment!'");
-                    alert("GAME OVER");
+                    alert("*You're helment is now off but somehow your still standing!*");
                 break;
                 
                 case "die":
                     alert("Clarisse 'Ok wow my voice that bad! Ill eject you from your helment!'");
-                    alert("GAME OVER");
+                    alert("*You're helment is now off but somehow your still standing!*");
                 break;
                 
                 case "suicide":
                     alert("Clarisse 'Ok is my voice that bad you always said you didn't like it!");
-                    alert("GAME OVER");
+                    alert("*You're helment is now off but somehow your still standing!*");
                 break;
                 
                 default:
@@ -74,6 +73,7 @@
                     else{
                         alert("Clarisse 'Ok fine be that way! You'll proably be killed by space men or something like bad like that! Lucky for me i'm not a human! GOOD BYE!'");
                         alert("GAME OVER!");
+                        alert("Just because I know you'll play again ill skip for you!");
                         }
                      
             
@@ -99,17 +99,16 @@
                     alert("Привет всем!");
                     alert(playerName + "Clarrisse can you end the call?");
                     alert("Clarrisse 'Sure'");
-                    alert("Clarrisse 'Um sir I think...The....Helemt is...running..l-low onnnnnnnnnnnnnn...Ch-charg.....'")
-                    alert("GAME OVER!")
+                    alert("Clarrisse 'Um sir I think...The....Helemt is...running..l-low onnnnnnnnnnnnnn...Ch-charg.....'");
+                    alert("oof");
                     break;
                     
                     case "your mom":
                     alert("Haha you think your so funny! Well my moms dead! Screw you!");
-                    alert("GAMEOVER!");
                     break;
                     
                     default:
-                        var manonMoon = prompt("What do you want to do now?")
+                        var manonMoon = prompt("What do you want to do now?").ToLowerCase;
                             switch(manonMoon){
                          
                                 case "Swim":
@@ -117,17 +116,17 @@
                                     break;
                                  case "suicide":
                                         alert("Clarisse 'Ok ill eject you from your helment!'");
-                                        alert("GAME OVER");
+                                        alert("*You're helment is now off but somehow your still standing!*");
                                         break;
                 
                                 case "kill myself":
                                         alert("Clarisse 'Ok ill eject you from your helment!'");
-                                        alert("GAME OVER");
+                                        alert("*You're helment is now off but somehow your still standing!*");
                                         break;
 
                                 case "die":
                                         alert("Clarisse 'Ok ill eject you from your helment!'");
-                                        alert("GAME OVER");
+                                        alert("*You're helment is now off but somehow your still standing!*");
                                         break;
 
                                 case "suicide":
@@ -161,9 +160,10 @@
                                     alert(playerName + " 'Fantasic i'm alone!'");
                                     break;
                                             }
-                              }
-                 var theShip = promt("What do you want to do now?").ToLowerCase;
-                     switch(theShip){
+                        
+                        var theShip = prompt("What do you want to do now?").ToLowerCase;
+                     
+                        switch(theShip){
                          case "die":
                              alert("Creator 'Omg do you hate my game that much! Well guess what you can't die but I can just end the game!");
                              alert("GameOver");
@@ -197,8 +197,10 @@
                                     alert("You walk down the hallway and find your self in a room with a red button");
                                      break;
                                            }
+        
+                              }
             
-                                         
+                 
                                      
                                      
                                            
