@@ -198,10 +198,22 @@
                                         alert("*You grab take the key and unlock the door*");
                                         alert("*You see that there is a long hall way going from left to right*");
                                      
-                                     var hallWay = prompt("What way do you want to go?").toLowerCase;
+                                     var hallWay = prompt("What way do you want to go? (Left or right?)").toLowerCase;
                              switch(grabKey){
                                  case "left":
                                      alert("You walk down the hallway and find your self in a room with a sword");
+                                      var sword = confirm("Do you want to grab the sword?");
+                    
+                    if(callPeople){
+                        alert("You now have the SWORD");
+                    }
+                    
+                    else{
+                        alert("You don't pick up the sword because you're just weak and can't pick up a 10 pound sword");
+                        alert("*You here a knock on the door*");
+                        alert(playerName + "' Who there?");
+                        alert("")
+                        }
                                      break;
                                      
                                  case "right":
@@ -209,6 +221,13 @@
                                     alert("Because of who you are you love pressing buttons so you desided to press it! Setting of every bomb in that ship blowing it up and everyone dies in it including you!");
                                     alert("GAME OVER!");
                                      break;
+                                     
+                                 default:
+                                     alert("GameCreator 'Ok you really are boring you could of picked right or left and you did none of thoughs!'");
+                                     alert("So the storie stays here with you left in your cell nothing to do.");
+                                     alert("The aliens forgot all about you and you never got any food and starved!");
+                                     alert("GameOver");
+                                     screenTop;
                                            }
         
                                      
